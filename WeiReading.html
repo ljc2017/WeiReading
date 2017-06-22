@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/WeiReading.css"/>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
+		<script type="text/javascript" src="js/WeiReadingjs.js"></script>
+		<script type="text/javascript" src="js/WeiReading.js"></script>
+		<script>
+			 document.documentElement.style.fontSize=innerWidth/16+"px";
+		</script>
+		<title></title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="litre_page">
+				<div class="litreradio">
+					<header class="radioheader">
+						<i class="del"></i>
+						<h3>FM 42.3</h3>
+						<span class="time">6月20   日星期二·每日更新</span>
+					</header>
+					<div class="musi">
+						<ul class="swiper-wrapper musicarousel">
+							<li class="swiper-slide">
+								<div class="musi_wrap">
+									<div class="musititle">
+										<h4>炜·学说</h4>
+										<span class="portrait"><img src="img/images/radio1.png"/></span>
+									</div>
+									<div class="musicontent">
+										<div class="barrage_content" id="barrage_content">
+											假作真时真亦假，静听人世炜学说。每周为你解读一本书籍，带你穿越文化历史，脚步从不停歇。
+										</div>
+										<div class="playerMid">
+											<div class="prograssBar" id="prograssBar"></div>
+											<a href="javascript:;" class="schedule_btn" id="schedule_btn"></a>
+											<span id="proceedtime" class="proceedtime"></span>
+											<span id="playtime" class="playtime"></span>
+										</div>
+										<div class="btns">
+											<span class="left swiper-button-prev" id="left"></span>
+											<span class="btn" id="btn"></span>
+											<span class="right swiper-button-next" id="right"></span>
+										</div>
+										<audio id="myaudio" controls>
+											<source src="img/ccnxn.mp3" type="audio/mp3"/></source>
+										</audio>
+									</div>
+									<div class="musifocus">
+										<span class="zz">15</span>
+										<span class="gz">83</span>
+										<span class="ly">36</span>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide"><div class="musi_wrap">
+									<div class="musititle">
+										<h4>柠檬心理课堂</h4>
+										<span class="portrait"><img src="img/images/radio2.png"/></span>
+									</div>
+									<div class="musicontent">
+										<div class="barrage_content" id="barrage_content">
+											柠檬心理课堂·柠檬心理告诉你什么是齐加尼克效应？
+										</div>
+										<div class="playerMid">
+											<div class="prograssBar" id="prograssBar"></div>
+											<a href="javascript:;" class="schedule_btn" id="schedule_btn"></a>
+											<span id="proceedtime" class="proceedtime"></span>
+											<span id="playtime" class="playtime"></span>
+										</div>
+										<div class="btns">
+											<span class="left swiper-button-prev" id="left"></span>
+											<span class="btn" id="btn"></span>
+											<span class="right swiper-button-next" id="right"></span>
+										</div>
+										<audio id="myaudio" controls>
+											<source src="img/ccnxn.mp3" type="audio/mp3"/></source>
+										</audio>
+									</div>
+									<div class="musifocus">
+										<span class="zz">24</span>
+										<span class="gz">74</span>
+										<span class="ly">54</span>
+									</div>
+								</div></li>
+							<li class="swiper-slide"><div class="musi_wrap">
+									<div class="musititle">
+										<h4>亦无欢说</h4>
+										<span class="portrait"><img src="img/images/radio3.png"/></span>
+									</div>
+									<div class="musicontent">
+										<div class="barrage_content" id="barrage_content">
+											亦无欢·每个人内心都有自己的肿胀
+										</div>
+										<div class="playerMid">
+											<div class="prograssBar" id="prograssBar"></div>
+											<a href="javascript:;" class="schedule_btn" id="schedule_btn"></a>
+											<span id="proceedtime" class="proceedtime"></span>
+											<span id="playtime" class="playtime"></span>
+										</div>
+										<div class="btns">
+											<span class="left swiper-button-prev" id="left"></span>
+											<span class="btn" id="btn"></span>
+											<span class="right swiper-button-next" id="right"></span>
+										</div>
+										<audio id="myaudio" controls>
+											<source src="img/ccnxn.mp3" type="audio/mp3"/></source>
+										</audio>
+									</div>
+									<div class="musifocus">
+										<span class="zz">12</span>
+										<span class="gz">41</span>
+										<span class="ly">21</span>
+									</div>
+								</div></li>
+							<li class="swiper-slide"><div class="musi_wrap">
+									<div class="musititle">
+										<h4>深夜郝文</h4>
+										<span class="portrait"><img src="img/images/radio4.png"/></span>
+									</div>
+									<div class="musicontent">
+										<div class="barrage_content" id="barrage_content">
+											郝大帅·【24节气-夏至】  现在不吃西瓜，更待何时呢？
+										</div>
+										<div class="playerMid">
+											<div class="prograssBar" id="prograssBar"></div>
+											<a href="javascript:;" class="schedule_btn" id="schedule_btn"></a>
+											<span id="proceedtime" class="proceedtime"></span>
+											<span id="playtime" class="playtime"></span>
+										</div>
+										<div class="btns">
+											<span class="left swiper-button-prev" id="left"></span>
+											<span class="btn" id="btn"></span>
+											<span class="right swiper-button-next" id="right"></span>
+										</div>
+										<audio id="myaudio" controls>
+											<source src="img/ccnxn.mp3" type="audio/mp3"/></source>
+										</audio>
+									</div>
+									<div class="musifocus">
+										<span class="zz">23</span>
+										<span class="gz">74</span>
+										<span class="ly">31</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div></div>
+					</div>
+					
+				</div>
+			</div>
+			<section class="content">
+				<div class="nav find_page">
+					<header class="findheader">
+						<h3>发现</h3>
+						<span class="radio">FM 42<span class="line">|</span>3</span>
+					</header>
+					<div class="box">
+						<ul class="swiper-wrapper findcarousel">
+							<li class="swiper-slide">
+								<div class="box_wrap"><img src="img/images/banner1.PNG"/></div>
+							</li>
+							<li class="swiper-slide">
+								<div class="box_wrap">
+									<img src="img/images/banner2.PNG"/>
+									<span class="radio"></span>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="box_wrap"><img src="img/images/banner3.PNG"/></div>
+							</li>
+							<li class="swiper-slide">
+								<div class="box_wrap"><img src="img/images/banner6.PNG"/></div>
+							</li>
+							<li class="swiper-slide last">
+								<div class="box_wrap"><img src="img/images/banner7.PNG"/></div>
+							</li>
+							<div class="more">释放显示更多卡片</div>
+						</ul>
+							
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="nav bookrack">
+					<div class="jump">删除</div>
+					<header class="bookrackheader">
+						<h3>书架</h3>
+						<span class="redact">编辑</span>
+						<span class="book_city">书城</span>
+					</header>
+					<ul class="books">
+						<li class="books_li">
+							<img src="img/images/1.png"/>
+							<span>明朝那些事儿</span>
+						</li>
+						<li class="books_li">
+							<img src="img/images/2.png"/>
+							<span>白鹿原</span>
+						</li>
+						<li class="books_li">
+							<img src="img/images/3.png"/>
+							<span>三体</span>
+						</li>
+						<li class="books_li">
+							<img src="img/images/4.png"/>
+							<span>大秦帝国</span>
+						</li>
+						<li class="books_li">
+							<img src="img/images/5.png"/>
+							<span>万历十五年</span>
+						</li>
+						<li class="books_li">
+							<img src="img/images/6.png"/>
+							<span>追风筝的人</span>
+						</li>
+						<li class="books_li">
+							<img src="img/images/7.png"/>
+							<span>法医秦明</span>
+						</li>
+						<li class="books_li">
+							<img src="img/images/8.png"/>
+							<span>看见</span>
+						</li>
+						<li class="books_li">
+							<img src="img/images/9.png"/>
+							<span>后宫</span>
+						</li>
+						<li class="books_li">
+							<img src="img/images/1.png"/>
+							<span>明朝那些事儿</span>
+						</li>
+						<div class="addbook">
+							<div class="abk"><img src="img/icon/add.png"/></div>
+						</div>
+						<div class="pubble">
+							<span class="booknum"></span>
+						</div>
+					</ul>
+				</div>
+				<div class="nav thought">
+					<div class="thoughtheader">
+						<span class="on">关注的人</span>
+						<span>精选想法</span>
+						<i></i>
+					</div>
+					<div class="thought_content">
+						<ul class="thoughtlist">
+							<li class="focuspo">
+								<div class="pingyu">
+									<div class="focusleft"><img src="img/images/radio4.png"/></div>
+									<div class="focusright">
+										<h4 class="idnum">深夜郝文</h4>
+										<p class="txt">我不喜欢这个世界，我只喜欢你！比起用生命去爱你这些话，我更喜欢这个书名，找一个认可你，值得你爱的人没那么的容易，正因为如此，才要更努力更优秀，才能吸引同样出色的他或她。现实里，多少情爱开始都是美好的，随着一场婚礼到达高潮，执子之手 与子偕老...</p>
+										<p class="salltime">
+											<span class="salltimeed"></span>
+											<span class="now">10:27</span>
+											<span class="tu1"></span>
+											<span class="tu2"></span>
+										</p>
+									</div>
+								</div>
+								<div class="pingyu">
+									<div class="focusleft"><img src="img/images/radio3.png"/></div>
+									<div class="focusright">
+										<h4 class="idnum">亦无欢</h4>
+										<p class="txt">适应了婚姻里的柴米油盐酱醋茶，躲过了世俗的诱惑，接受对方的不足，欣赏对方的优点，认可对方的付出，理解对方爱你的方式。美满的家庭大体如此吧！</p>
+										<p class="salltime">
+											<span class="salltimeed"></span>
+											<span class="now">09:36</span>
+											<span class="tu1"></span>
+											<span class="tu2"></span>
+										</p>
+									</div>
+								</div>
+								<div class="pingyu">
+									<div class="focusleft"><img src="img/images/radio2.png"/></div>
+									<div class="focusright">
+										<h4 class="idnum">柠檬心理课堂</h4>
+										<p class="txt">柠檬心理课堂·柠檬心理告诉你什么是齐加尼克效应？</p>
+										<p class="salltime">
+											<span class="salltimeed"></span>
+											<span class="now">8:41</span>
+											<span class="tu1"></span>
+											<span class="tu2"></span>
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="nissthought">
+								<div class="pingyu">
+									<div class="focusleft"><img src="img/images/radio2.png"/></div>
+									<div class="focusright">
+										<h4 class="idnum">柠檬心理课堂</h4>
+										<p class="txt">柠檬心理课堂·柠檬心理告诉你什么是齐加尼克效应？</p>
+										<p class="salltime">
+											<span class="salltimeed"></span>
+											<span class="now">8:41</span>
+											<span class="tu1"></span>
+											<span class="tu2"></span>
+										</p>
+									</div>
+								</div>
+								<div class="pingyu">
+									<div class="focusleft"><img src="img/images/radio4.png"/></div>
+									<div class="focusright">
+										<h4 class="idnum">深夜郝文</h4>
+										<p class="txt">我不喜欢这个世界，我只喜欢你！比起用生命去爱你这些话，我更喜欢这个书名，找一个认可你，值得你爱的人没那么的容易，正因为如此，才要更努力更优秀，才能吸引同样出色的他或她。现实里，多少情爱开始都是美好的，随着一场婚礼到达高潮，执子之手 与子偕老...</p>
+										<p class="salltime">
+											<span class="salltimeed"></span>
+											<span class="now">10:27</span>
+											<span class="tu1"></span>
+											<span class="tu2"></span>
+										</p>
+									</div>
+								</div>
+								<div class="pingyu">
+									<div class="focusleft"><img src="img/images/radio3.png"/></div>
+									<div class="focusright">
+										<h4 class="idnum">亦无欢</h4>
+										<p class="txt">适应了婚姻里的柴米油盐酱醋茶，躲过了世俗的诱惑，接受对方的不足，欣赏对方的优点，认可对方的付出，理解对方爱你的方式。美满的家庭大体如此吧！</p>
+										<p class="salltime">
+											<span class="salltimeed"></span>
+											<span class="now">09:36</span>
+											<span class="tu1"></span>
+											<span class="tu2"></span>
+										</p>
+									</div>
+								</div>
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="nav setting">
+					<header class="settingheader">
+						<h3>末</h3>
+						<span class="email"><img src="img/icon/email.png"/></span>
+						<span class="settingbtn"><img src="img/icon/setting.png"/></span>
+					</header>
+					<div class="settingbox">
+						<div class="Pl_Information">
+							<div class="plportrait"><img src="img/images/radio2.png"/></div>
+							<span class="bjtxt">编辑个人资料</span>
+							<span class="enter"><img src="img/icon/right.png"/></span>
+						</div>
+						<div class="information1">
+							<span>
+								<i></i>
+								账单
+							</span>
+							<span>
+								<i></i>
+								好友排名
+								<em></em>
+							</span>
+						</div>
+						
+						<div class="information2">
+							<span>
+								<i></i>
+								关注
+							</span>
+							<span>
+								<i></i>
+								笔记
+								<em></em>
+							</span>
+							<span>
+								<i></i>
+								音频
+							</span>
+							<span>
+								<i></i>
+								书单
+								<em></em>
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="footer">
+				<ul class="footer_list">
+					<li class="listli active">
+						<i></i>
+						<span>发现</span>
+					</li>
+					<li class="listli">
+						<i></i>
+						<span>书架</span>
+					</li>
+					<li class="listli">
+						<i></i>
+						<span>想法</span>
+					</li>
+					<li class="listli">
+						<i></i>
+						<span>我</span>
+					</li>
+				</ul>
+			</footer>
+		</div>
+		<script type="text/javascript">
+		  	var s=new Swiper(".box",{
+		  		pagination:".swiper-pagination",
+		  	})
+		  	var ms=new Swiper(".musi",{
+		  		prevButton:'.swiper-button-prev',
+				nextButton:'.swiper-button-next',
+		  	})
+		  </script>
+	</body>
+</html>
