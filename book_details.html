@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="js/iscroll5.js"></script>
+		<script src="js/swiper-3.4.2.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/new_file2.css" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,
+			maximum-scale=1,user-scalable=no" />
+	</head>
+	<script type="text/javascript">
+		$(function() {
+			var i = 0;
+			
+			$(".super").on("tap", function() {
+				i++;
+				if(i % 2 == 0) {
+					$(".top_hide").css("height", "0");
+					$(".bottom_hide").css("height", "0")
+					$(".bottom_selsct").css("height","0")
+				} else {
+					$(".top_hide").css("height", "40px");
+					$(".bottom_hide").css("height", "40px");
+				}
+			})
+			
+			$(".column").on("tap", function() {
+				$(".hide_column").css("width", "280px");
+				$(".wrap").css("background","rgba(0,0,0,.2)")
+			})
+			$(".wrap").on("tap", function() {
+				$(".hide_column").css("width", "0");
+				$(".wrap").css("background","white")
+				
+			})
+			$(".hide_lists li a").eq(0).css("color","aqua");
+			$(".hide_lists li").on("tap",function(){
+				var index=$(this).index();								
+				$(".hide_lists li").eq(index).find("a").css("color","aqua");
+				$(".hide_lists li").eq(index).siblings().find("a").css("color","#666");
+				$(".hide_column").css("width", "0");
+				$(".wrap").css("background","white")
+			})
+			$(".select_bk").on("tap",function(){
+				$(".bottom_selsct").css("height","55px")								
+			})
+			
+			$(".bottom_selsct li").on("tap",function(){
+				var arr=["white","wheat","aquamarine","black"];
+				var x=$(this).index();
+				$(".wrap").css("background",arr[x]);
+				$(".top_hide").css("background",arr[x]);
+				$(".bottom_hide").css("background",arr[x]);
+				$("body").css("background",arr[x]);
+				$(".bottom_selsct").css("background",arr[x]);
+			})
+		})
+	</script>
+	<script>
+		document.documentElement.style.fontSize = innerWidth / 16 + "px"
+	</script>
+
+	<body>
+		<!----------------------描述：阅读控件顶部 ---------------------->
+		<div class="top_hide">
+			<a href="fenlei.html"><img class="left_top" src="img/1_08.png" /></a>
+			<a href=""><img class="right_top" src="img/1_11.png" /></a>
+		</div>
+
+		<div class="hide_column">
+			<div id="scroller">
+				<ul class="hide_lists">
+					<li>
+						<a >版权信息</a>
+					</li>
+					<li>
+						<a >题记</a>
+					</li>
+					<li>
+						<a >未完待续的麻雀寓言</a>
+					</li>
+					<li>
+						<a >天算论</a>
+					</li>
+					<li>
+						<a >序言</a>
+					</li>
+					<li>
+						<a >第一章 人工智能：昨日成就与今日现状</a>
+					</li>
+					<li>
+						<a >第二章 通往超级智能之路</a>
+					</li>
+					<li>
+						<a >第三章 超级智能的形式</a>
+					</li>
+					<li>
+						<a>第四章 智能大爆发的动力学</a>
+					</li>
+					<li>
+						<a >第五章 决定性战略优势</a>
+					</li>
+					<li>
+						<a >第六章 超级智能的形式</a>
+					</li>
+					<li>
+						<a >第七章 超级智能的意愿</a>
+					</li>
+					<li>
+						<a >第八章 结局注定是厄运吗？</a>
+					</li>
+					<li>
+						<a >第九章 控制问题</a>
+					</li>
+					<li>
+						<a >第十章 神谕，精灵，主权，工具</a>
+					</li>
+					<li>
+						<a >第十一章 多级情景</a>
+					</li>
+					<li>
+						<a >第十二章 获取价值观</a>
+					</li>
+					<li>
+						<a >第十三章 确定选择标准</a>
+					</li>
+					<li>
+						<a >第十四章 战略图景</a>
+					</li>
+					<li>
+						<a >第十五章 关键时刻</a>
+					</li>
+					<li>
+						<a >致谢</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="reader_list">
+			<ul class="wraplist swiper-wrapper">
+				<li class="swiper-slide">
+					<div class="wrap">
+						<div class="super">
+							<img src="img/IMG_3888_07.png" />
+						</div>
+					</div>
+					<span>读你想读</span>
+				</li>
+				<li class="swiper-slide">
+					1
+				</li>
+				<li class="swiper-slide">
+					2
+				</li>
+				<li class="swiper-slide">
+					3
+				</li>
+			</ul>
+		</div>
+			
+			
+		
+		
+		<div class="bottom_selsct">
+			<ul class="bk_color">
+				<li class="bk_white"></li>
+				<li class="bk_yellow"></li>
+				<li class="bk_green"></li>
+				<li class="bk_black"></li>
+			</ul>
+		</div>
+		<!----------------------描述：阅读控件顶部 ---------------------->
+		<div class="bottom_hide">
+			<a><img class="column" src="img/1_04.png" /></a>
+			<a><img src="img/1_02.png" /></a>
+			<a><img class="select_bk" src="img/1_01.png" /></a>
+			<a><img src="img/1_06.png" /></a>
+		</div>
+		
+		
+	</body>
+
+</html>
+<script type="text/javascript">
+	var a = new IScroll("#scroller");
+</script>
+<script type="text/javascript">
+	var mySwiper = new Swiper('.reader_list', {
+})
+</script>

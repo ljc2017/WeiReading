@@ -385,7 +385,7 @@ ul {
 .container .content .find_page .findcarousel li .box_wrap {
   margin: 0 auto;
   width: 14rem;
-  height: 22.75rem;
+  height: 100%;
   border-radius: 0.5rem;
   background: white;
   -webkit-box-shadow: 0 0 1rem 0.05rem #e6e6e6;
@@ -409,6 +409,7 @@ ul {
   color: red;
   position: fixed;
   bottom: 0;
+  z-index: 999;
 }
 
 .container .content .bookrack .books {
@@ -593,10 +594,13 @@ ul {
   height: 100%;
 }
 
+.container .content .thought .thought_content .thoughtlist .focuspo {
+  overflow: auto;
+}
+
 .container .content .thought .thought_content .thoughtlist .focuspo .pingyu {
   display: -webkit-flex;
   width: 100%;
-  height: auto;
   padding: 0.75rem;
   background: #fff;
   border-bottom: 0.05rem solid #e6e6e6;
@@ -679,10 +683,13 @@ ul {
   margin: 0 0.25rem;
 }
 
+.container .content .thought .thought_content .thoughtlist .nissthought {
+  overflow: auto;
+}
+
 .container .content .thought .thought_content .thoughtlist .nissthought .pingyu {
   display: -webkit-flex;
   width: 100%;
-  height: auto;
   padding: 0.75rem;
   background: #fff;
   border-bottom: 0.05rem solid #e6e6e6;
@@ -1013,6 +1020,9 @@ ul {
   width: 100%;
   height: 2.25rem;
   padding: 0.1rem 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   background: white;
   border-top: 1px solid #e6e6e6;
   -webkit-box-shadow: 0 -0.05rem 0.15rem 0 #e6e6e6;

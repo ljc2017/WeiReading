@@ -1,0 +1,102 @@
+@charset "utf-8";
+$sc: 20;
+//声明一个变量
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+.wrap {
+    position: relative;
+    width: 92%;  
+    margin: 0 auto;
+    
+    .top_qiri {
+        width:100%;
+        height:45/$sc+rem;
+        position: fixed;
+        top:0;
+        background: white;
+        margin: 8/$sc+rem auto;
+        z-index: 999;
+        i {
+            display: block;
+            height: 100%;
+            float: left;
+            color: #eee;
+            line-height: 45/$sc+rem;
+            font-size: 24/$sc+rem;
+            a{
+                margin-top: 10/$sc+rem;
+                img{
+                    height: 20/$sc+rem;
+                }
+            }
+        }
+        .zaidu {
+            font-size: 18/$sc+rem;
+            margin-left: -40/$sc+rem;
+            line-height: 40/$sc+rem;
+            text-align: center;
+            color: #333;
+            width: 100%;
+        }
+    }
+    .book_list {       
+        overflow: auto;
+        position: absolute;
+        top:53/$sc+rem;
+        width:100%;
+        height:(568-53)/$sc+rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        .title_artical{
+            margin-bottom: 50/$sc+rem;
+            position: relative;
+            p{
+                text-indent: 2em; 
+                color: #333; 
+                font-size: 14/$sc+rem;
+                line-height: 24/$sc+rem;
+            }
+            span{
+                img{
+                     width:80/$sc+rem ;
+                     height: 22/$sc+rem;
+                     position: absolute;
+                     bottom: -30/$sc+rem;
+                     right: 0;
+                }         
+            }
+        }
+        li {          
+            list-style: none;
+            width: 28%;
+            height: 120/$sc+rem;
+            float: left;
+            border-radius: 5/$sc+rem;
+            margin-bottom: 50/$sc+rem;
+            position: relative;
+            img {
+                width: 100%;
+                height: 120/$sc+rem;
+            }
+            span {
+                position: absolute;
+                left: 30%;
+                bottom: -20%;
+                width: 100%;
+                font-size: 8/$sc+rem;
+                transform: translate(-30%,20%);
+                text-align-last: center;
+                color: #333;
+            }
+        }
+    }
+}

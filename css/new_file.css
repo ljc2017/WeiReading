@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+.wrap {
+  position: relative;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.wrap .top_qiri {
+  width: 100%;
+  height: 2.25rem;
+  position: fixed;
+  top: 0;
+  background: white;
+  margin: 0.4rem auto;
+  z-index: 999;
+}
+
+.wrap .top_qiri i {
+  float: left;
+  height: 100%;
+  color: #eee;
+  font-size: 1.2rem;
+  line-height: 2.25rem;
+}
+
+.wrap .top_qiri i a .img {
+  height: 1rem;
+}
+
+.wrap .top_qiri .zaidu {
+  font-size: 0.9rem;
+  margin-left: -2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #999;
+  width: 100%;
+}
+
+.wrap .book_list {
+  overflow: auto;
+  position: absolute;
+  top: 2.65rem;
+  width: 100%;
+  height: 25.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrap .book_list li {
+  /*background: url(../img/ca2cad9fc7d4483623bc9139d322bb3e.jpg) -100px -10px;*/
+  list-style: none;
+  width: 28%;
+  height: 6rem;
+  float: left;
+  border-radius: 0.25rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.wrap .book_list li img {
+  width: 100%;
+  height: 6rem;
+}
+
+.wrap .book_list li span {
+  position: absolute;
+  left: 30%;
+  bottom: -20%;
+  width: 100%;
+  font-size: 0.4rem;
+  transform: translate(-30%, 20%);
+  text-align-last: center;
+}

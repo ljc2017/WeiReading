@@ -6,7 +6,6 @@
 		<link rel="stylesheet" type="text/css" href="css/WeiReading.css"/>
 		<script type="text/javascript" src="js/zepto.min.js"></script>
 		<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
-		<script type="text/javascript" src="js/WeiReadingjs.js"></script>
 		<script type="text/javascript" src="js/WeiReading.js"></script>
 		<script>
 			 document.documentElement.style.fontSize=innerWidth/16+"px";
@@ -190,7 +189,7 @@
 					<header class="bookrackheader">
 						<h3>书架</h3>
 						<span class="redact">编辑</span>
-						<span class="book_city">书城</span>
+						<a href="fenlei.html"><span class="book_city">书城</span></a>
 					</header>
 					<ul class="books">
 						<li class="books_li">
@@ -234,7 +233,7 @@
 							<span>明朝那些事儿</span>
 						</li>
 						<div class="addbook">
-							<div class="abk"><img src="img/icon/add.png"/></div>
+							<a href="fenlei.html"><div class="abk"><img src="img/icon/add.png"/></div></a>
 						</div>
 						<div class="pubble">
 							<span class="booknum"></span>
@@ -403,6 +402,7 @@
 				</ul>
 			</footer>
 		</div>
+		<script type="text/javascript" src="js/WeiReadingjs.js"></script>
 		<script type="text/javascript">
 		  	var s=new Swiper(".box",{
 		  		pagination:".swiper-pagination",

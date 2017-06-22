@@ -14,56 +14,26 @@ var btn=document.getElementById("btn");
 var left=document.getElementById("left");
 var right=document.getElementById("right");
 var pB=document.getElementById("prograssBar");
+var pMid=document.getElementById("playerMid");
 var sbtn=document.getElementById("schedule_btn");
+setInterval(function(){
+	pdt.innerHTML=getTimeFormat(ado.currentTime);
+	plt.innerHTML=getTimeFormat(ado.duration);
+//	rng.value=ov.currentTime/ov.duration;
+},1000)				
+				
+btn.onclick=function(){
+	if(ado.paused){
+		ado.play();
+	}
+	else{
+		ado.pause();
+	}
+}		
+				
+				
 
-//setInterval(function(){
-//	pdt.innerHTML=getTimeFormat(ado.currentTime);
-//	plt.innerHTML=getTimeFormat(ado.duration);
-////	rng.value=ov.currentTime/ov.duration;
-//},1000)				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-//				btn.onclick=function(){
-//					
-//					if(ov.paused)
-//					{
-//						ov.play();
-//						this.innerHTML="停止";
-//					}
-//					else{
-//						ov.pause();
-//						this.innerHTML="播放";
-//					}
-//					 
-//				}
-//				
-//				ov.addEventListener("ended",function(){
-//					 if(confirm("是否要重播?")){
-//					 	ov.play();
-//					 }
-//				})
-//				
+
 //				rng.onchange=function(){
 //					 ov.currentTime=ov.duration*this.value;
 //				}

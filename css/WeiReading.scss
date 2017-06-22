@@ -336,7 +336,7 @@ $sc:20;
                     .box_wrap{
                         margin: 0 auto;
                         width: 280/$sc+rem;
-                        height: 455/$sc+rem;
+                        height: 100%;
                         border-radius: 10/$sc+rem;
                         background: white;
                         -webkit-box-shadow: 0 0 20/$sc+rem 1/$sc+rem #e6e6e6;
@@ -360,12 +360,12 @@ $sc:20;
                 color: red;
                 position: fixed;
                 bottom: 0;
+                z-index: 999;
             }
             .books{
                 padding: 0 5/$sc+rem;
                 display: -webkit-flex;
-                flex-wrap: wrap;
-                overflow: auto;
+                flex-wrap: wrap;overflow: auto;
                 .books_li{
                     width: 33.33%;
                     height: 145/$sc+rem;
@@ -518,10 +518,10 @@ $sc:20;
                         height: 100%;
                     }
                     .focuspo{
+                        overflow: auto;
                         .pingyu{
                             display: -webkit-flex;
                             width: 100%;
-                            height: auto;
                             padding: 15/$sc+rem;
                             background: #fff;
                             border-bottom: 1/$sc+rem solid #e6e6e6;
@@ -595,10 +595,10 @@ $sc:20;
                         }
                     }
                     .nissthought{
+                        overflow: auto;
                         .pingyu{
                             display: -webkit-flex;
                             width: 100%;
-                            height: auto;
                             padding: 15/$sc+rem;
                             background: #fff;
                             border-bottom: 1/$sc+rem solid #e6e6e6;
@@ -904,6 +904,9 @@ $sc:20;
         width: 100%;
         height: 45/$sc+rem;
         padding: 2/$sc+rem 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
         background: white;
         border-top:1px solid #e6e6e6 ;
         -webkit-box-shadow: 0 -1/$sc+rem 3/$sc+rem 0 #e6e6e6;
