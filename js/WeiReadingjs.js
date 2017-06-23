@@ -16,10 +16,12 @@ var right=document.getElementById("right");
 var pB=document.getElementById("prograssBar");
 var pMid=document.getElementById("playerMid");
 var sbtn=document.getElementById("schedule_btn");
+var c=0;
 setInterval(function(){
+	c++;
 	pdt.innerHTML=getTimeFormat(ado.currentTime);
 	plt.innerHTML=getTimeFormat(ado.duration);
-//	rng.value=ov.currentTime/ov.duration;
+	pB.style.width=(c/241)*pMid.offsetWidth;
 },1000)				
 				
 btn.onclick=function(){

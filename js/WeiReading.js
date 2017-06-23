@@ -95,12 +95,12 @@ $(function(){
 //想法
 	$(".thoughtheader span").on("tap",function(){
 		var index=$(this).index();
+		var ww=$(".thoughtlist li").width();
 		$(this).addClass("on").siblings("span").removeClass("on");
-		$(".thoughtlist").animate({marginLeft:-index*320+"px"},300);
+		$(".thoughtlist").animate({marginLeft:-index*ww+"px"},300);
 	})
 	
 //nav
-	$(".nav").eq(0).css("display","block").siblings().css("display","none");
 	$(".footer_list li").on("tap",function(){
 		var index=$(this).index();
 		$(".nav").eq(index).css("display","block").siblings().css("display","none");

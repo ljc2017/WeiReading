@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+a{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
 html,body{
     width: 100%;
     height: 100%;
@@ -64,6 +69,15 @@ $sc:20;
             }
             .musi{
                 flex: 1;
+                position: relative;
+                .txtp{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 14/$sc+rem;
+                    color: #1B88EE;
+                    position: absolute;
+                    bottom: 4%;
+                }
                 ul{
                     flex: 1;
                     width: 100%;
@@ -121,6 +135,7 @@ $sc:20;
                                 overflow: hidden;
                                 text-overflow: ellipsis;
                                 white-space: nowrap;
+                                position: relative;
                                 .barrage_content{
                                    width: 100%;
                                     height: 50/$sc+rem;
@@ -132,7 +147,7 @@ $sc:20;
                                 }
                                 .playerMid{
                                     margin: 0 auto;
-                                    width: 95%;
+                                    width: 230/$sc+rem;
                                     height: 4px;
                                     margin-top: 10/$sc+rem;
                                     background: #e6f0fb;
@@ -276,6 +291,8 @@ $sc:20;
             left: 0;
             display: none;
         }
+        
+        //----------------------------发现     页面------------------------------------
         .find_page{
             width: 100%;
             height: 100%;
@@ -283,9 +300,6 @@ $sc:20;
             overflow: hidden;
             display: -webkit-flex;
             flex-direction: column;
-            .box{
-                position: relative;
-            }
             .findheader{
                 width: 100%;
                 height: 55/$sc+rem;
@@ -317,125 +331,43 @@ $sc:20;
                     }
                 }
             }
-            .findcarousel{
-                flex: 1;
-                width: 100%;
-                height: 100%;
-                display: -webkit-flex;
-                transition: transform 1s;
-                .more{
-                    margin-top: 45%;
-                    width: 15/$sc+rem;
-                    opacity: .5;
-                    font-size: 12/$sc+rem;
-                }
-                li{
+            .box{
+                position: relative;
+                height: 80%;
+                .findcarousel{
                     width: 100%;
                     height: 100%;
-                    -webkit-flex-shrink: 0;
-                    .box_wrap{
-                        margin: 0 auto;
-                        width: 280/$sc+rem;
+                    display: -webkit-flex;
+                    .more{
+                        margin-top: 45%;
+                        width: 15/$sc+rem;
+                        opacity: .4;
+                        font-size: 12/$sc+rem;
+                    }
+                    li{
+                        width: 100%;
                         height: 100%;
-                        border-radius: 10/$sc+rem;
-                        background: white;
-                        -webkit-box-shadow: 0 0 20/$sc+rem 1/$sc+rem #e6e6e6;
+                        -webkit-flex-shrink: 0;
+                        .box_wrap{
+                            margin: 0 auto;
+                            width: 85%;
+                            height: 100%;
+                            border-radius: 10/$sc+rem;
+                            background: white;
+                            -webkit-box-shadow: 0 0 20/$sc+rem 1/$sc+rem #e6e6e6;
+                        }
                     }
                 }
             }
         }
+        
+        //----------------------------书架     页面------------------------------------
         .bookrack{
             width: 100%;
             height: 100%;
             background: #f6f6f6;
             display: -webkit-flex;
             flex-direction: column;
-            .jump{
-                display: none;
-                width: 100%;
-                height: 45/$sc+rem;
-                background: white;
-                line-height: 45/$sc+rem;
-                text-align: center;
-                color: red;
-                position: fixed;
-                bottom: 0;
-                z-index: 999;
-            }
-            .books{
-                padding: 0 5/$sc+rem;
-                display: -webkit-flex;
-                flex-wrap: wrap;overflow: auto;
-                .books_li{
-                    width: 33.33%;
-                    height: 145/$sc+rem;
-                    padding: 0 15/$sc+rem;
-                    box-sizing: border-box;
-                    -webkit-box-sizing: border-box;
-                    position: relative;
-                    .select{
-                        display: none;
-                        width: 15/$sc+rem;
-                        height: 15/$sc+rem;
-                        opacity: .8;
-                        background: url(../img/icon/wxz.png);
-                        background-size:15/$sc+rem 15/$sc+rem;
-                        position: absolute;
-                        right: 18/$sc+rem;
-                        top: 100/$sc+rem;
-                    }
-                    .select.selected{
-                        background: url(../img/icon/xz.png);
-                        background-size:15/$sc+rem 15/$sc+rem;
-                    }
-                    img{
-                        width: 100%;
-                        margin: 15/$sc+rem 0 5/$sc+rem;
-                        -webkit-box-shadow: 0 0 8/$sc+rem 5/$sc+rem #ddd;
-                    }
-                    span{
-                        display: block;
-                        font-size: 10/$sc+rem;
-                        text-align: center;
-                    }
-                }
-                .addbook{
-                    width: 33.33%;
-                    height: 145/$sc+rem;
-                    padding: 0 15/$sc+rem;
-                    box-sizing: border-box;
-                    -webkit-box-sizing: border-box;
-                    position: relative;
-                    .abk{
-                        width: 100%;
-                        height: 102/$sc+rem;
-                        border: 1/$sc+rem solid #DDD;
-                        margin: 15/$sc+rem 0 5/$sc+rem;
-                        -webkit-box-shadow: 0 0 10/$sc+rem 1/$sc+rem #ddd;
-                        text-align: center;
-                        background: white;
-                        img{
-                            margin-top: 30/$sc+rem;
-                        }
-                    }
-                }
-                .pubble{
-                    width: 280/$sc+rem;
-                    height: 0;
-                    margin: 20/$sc+rem 20/$sc+rem 10/$sc+rem 20/$sc+rem;
-                    border-bottom: 1/$sc+rem solid #e6e6e6;
-                    position: relative;
-                    .booknum{
-                        padding: 0 10/$sc+rem;
-                        font-size: 10/$sc+rem;
-                        font-family: "楷体";
-                        background: #f6f6f6;
-                        position: absolute;
-                        top: -7/$sc+rem;
-                        left: 30%;
-                    }
-                }
-            }
             .bookrackheader{
                 width: 100%;
                 height: 55/$sc+rem;
@@ -470,7 +402,100 @@ $sc:20;
                     right: 15/$sc+rem;
                 }
             }
+            .jump{
+                display: none;
+                width: 100%;
+                height: 45/$sc+rem;
+                background: white;
+                line-height: 45/$sc+rem;
+                text-align: center;
+                color: red;
+                position: fixed;
+                bottom: 0;
+                z-index: 999;
+            }
+            .bookrackbox{
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                .books{
+                    padding: 0 5/$sc+rem;
+                    display: -webkit-flex;
+                    flex-wrap: wrap;
+                    padding-bottom: 100/$sc+rem;
+                    .books_li{
+                        width: 33.33%;
+                        padding: 0 15/$sc+rem;
+                        box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        position: relative;
+                        .select{
+                            display: none;
+                            width: 15/$sc+rem;
+                            height: 15/$sc+rem;
+                            opacity: .8;
+                            background: url(../img/icon/wxz.png);
+                            background-size:15/$sc+rem 15/$sc+rem;
+                            position: absolute;
+                            right: 18/$sc+rem;
+                            top: 100/$sc+rem;
+                        }
+                        .select.selected{
+                            background: url(../img/icon/xz.png);
+                            background-size:15/$sc+rem 15/$sc+rem;
+                        }
+                        img{
+                            width: 100%;
+                            margin: 15/$sc+rem 0 5/$sc+rem;
+                            -webkit-box-shadow: 0 0 8/$sc+rem 5/$sc+rem #ddd;
+                        }
+                        span{
+                            display: block;
+                            font-size: 10/$sc+rem;
+                            text-align: center;
+                        }
+                    }
+                    .addbook{
+                        width: 33.33%;
+                        height: 145/$sc+rem;
+                        padding: 0 15/$sc+rem;
+                        box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        position: relative;
+                        .abk{
+                            width: 100%;
+                            height: 102/$sc+rem;
+                            border: 1/$sc+rem solid #DDD;
+                            margin: 15/$sc+rem 0 5/$sc+rem;
+                            -webkit-box-shadow: 0 0 10/$sc+rem 1/$sc+rem #ddd;
+                            text-align: center;
+                            background: white;
+                            img{
+                                margin-top: 30/$sc+rem;
+                            }
+                        }
+                    }
+                    .pubble{
+                        width: 280/$sc+rem;
+                        height: 0;
+                        margin: 10/$sc+rem 20/$sc+rem 20/$sc+rem;
+                        border-bottom: 1/$sc+rem solid #e6e6e6;
+                        position: relative;
+                        .booknum{
+                            padding: 0 10/$sc+rem;
+                            font-size: 10/$sc+rem;
+                            font-family: "楷体";
+                            background: #f6f6f6;
+                            position: absolute;
+                            top: -7/$sc+rem;
+                            left: 30%;
+                        }
+                    }
+                }
+            }
         }
+        
+        //----------------------------想法     页面------------------------------------
         .thought{
             width: 100%;
             height: 100%;
@@ -508,17 +533,19 @@ $sc:20;
             }
             .thought_content{
                 flex: 1;
-                overflow: hidden;
+                height: 100%;
                 .thoughtlist{
                     width: 200%;
-                    height: 100%;
+                    height: 82%;
+                    padding-bottom: 80/$sc+rem;
                     li{
                         float: left;
                         width: 50%;
                         height: 100%;
+                        overflow: auto;
+                        padding-bottom: 80/$sc+rem;
                     }
                     .focuspo{
-                        overflow: auto;
                         .pingyu{
                             display: -webkit-flex;
                             width: 100%;
@@ -595,7 +622,6 @@ $sc:20;
                         }
                     }
                     .nissthought{
-                        overflow: auto;
                         .pingyu{
                             display: -webkit-flex;
                             width: 100%;
@@ -674,6 +700,8 @@ $sc:20;
                 }
             }
         }
+        
+        //----------------------------设置     页面------------------------------------
         .setting{
             width: 100%;
             height: 100%;
@@ -980,7 +1008,7 @@ $sc:20;
     width: 100%;
     text-align: center;
      position: absolute;
-     bottom: 5/$sc+rem;
+     bottom: 1%;
 }
 .swiper-pagination-bullet{
     width: 10/$sc+rem;
