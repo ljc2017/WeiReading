@@ -46,8 +46,8 @@ a{
             left: 35%;
             width: 20/$sc+rem;
             height: 20/$sc+rem;
-            background: url("../img/fdj.png") 0 0;
-
+            background: url("../img/fdj.png") no-repeat 0 0;
+            background-size: 20/$sc+rem 20/$sc+rem;
         }
         .fdj_s {
             position: absolute;

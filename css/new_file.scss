@@ -10,48 +10,45 @@ a{
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    
+}
+html,body{
+    width: 100%;
+    height: 100%;
 }
 .wrap {
-    position: relative;
-    width: 92%;  
-    margin: 0 auto;
-    
+    width: 100%;  
+    height: 100%;
     .top_qiri {
         width:100%;
-        height:45/$sc+rem;
+        height:55/$sc+rem;
         position: fixed;
         top:0;
+        text-align: center;
+        line-height: 55/$sc+rem;
         background: white;
-        margin: 8/$sc+rem auto;
         z-index: 999;
+        font-size: 18/$sc+rem;
+        color: #999;
         i {
             float: left;
-            height: 100%;
-            color: #eee;
-            font-size: 24/$sc+rem;
-            line-height: 45/$sc+rem;
-            a{
-                .img{
-                    height: 20/$sc+rem;
-                }
+            height: 20/$sc+rem;
+            width: 10/$sc+rem;
+            margin: 15/$sc+rem 0 0 15/$sc+rem;
+            position: relative;
+            .img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20/$sc+rem;
+                width: 10/$sc+rem;
             }
-        }
-        .zaidu {
-            font-size: 18/$sc+rem;
-            margin-left: -40/$sc+rem;
-            line-height: 40/$sc+rem;
-            text-align: center;
-            color: #999;
-            width: 100%;
         }
     }
     .book_list {       
         overflow: auto;
-        position: absolute;
-        top:53/$sc+rem;
-        width:100%;
-        height:(568-53)/$sc+rem;
+        padding:55/$sc+rem 20/$sc+rem 0;
+        width:280/$sc+rem;
+        height:(568-55)/$sc+rem;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -70,6 +67,7 @@ a{
                 height: 120/$sc+rem;
             }
             span {
+                display: block;
                 position: absolute;
                 left: 30%;
                 bottom: -20%;
@@ -77,6 +75,9 @@ a{
                 font-size: 8/$sc+rem;
                 transform: translate(-30%,20%);
                 text-align-last: center;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
             }
         }
     }

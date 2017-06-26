@@ -50,7 +50,8 @@ a {
   left: 35%;
   width: 1rem;
   height: 1rem;
-  background: url("../img/fdj.png") 0 0;
+  background: url("../img/fdj.png") no-repeat 0 0;
+  background-size: 1rem 1rem;
 }
 
 .top .fdj_s {
